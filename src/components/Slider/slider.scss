@@ -52,6 +52,22 @@
       bottom: 5%;
     }
   }
+  .slideTextMobile {
+    position: absolute;
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-left: 1em;
+    line-height: 1em;
+    top: 5%;
+    span {
+      font-weight: 200;
+      font-size: 0.5em;
+    }
+  }
   .slideText {
     position: absolute;
     font-size: 2.5em;
@@ -83,5 +99,8 @@
       font-weight: 200;
       font-size: 0.9em;
     }
+  }
+  &--1 {
+    background: linear-gradient(to bottom right, #EF9A9A, #FFE082);
   }
 }

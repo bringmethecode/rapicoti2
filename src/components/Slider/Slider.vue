@@ -5,10 +5,15 @@
       :autoplaySpeed="5000"
       :pauseOnHover="false">
       <div class="slide slide--1">
-        <h1 v-if="isMobile" class="slideText slideText-1">Cotizaciones:
+        <h1 v-if="isDesktop" class="slideText slideText-1">Cotizaciones:
           <br /><span>A un solo click,</span>
           <br /><span>Rapidas,</span>
           <br /><span>Efectivas.</span>
+        </h1>
+        <h1 class="slideTextMobile" v-else>
+          Cotizaciones:
+          <br />
+          <span>A un solo click, rápidas, efectivas.</span>
         </h1>
         <img class="slidePhone slidePhone-1" :src="slide1phone" />
       </div>
@@ -29,19 +34,16 @@ export default {
   name: 'slider',
   data () {
     return {
-      isMobile: null,
+      isDesktop: null,
       slide1phone: require('../../assets/slides/pixelmockup.png'),
       slide2phone: require('../../assets/slides/pixelmockup2.png')
     }
   },
   created () {
     if (screen.width > 500) {
-      return {
-        isMobile: false
-      }
-    }
-    return {
-      isMobile: true
+      this.isDesktop = true
+    } else {
+      this.isDesktop = false
     }
   }
 }

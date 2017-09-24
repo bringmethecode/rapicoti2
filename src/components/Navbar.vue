@@ -100,10 +100,22 @@ export default {
   padding: 0 2em;
   min-height: 10vh;
 }
-.navbar-brand, .navbar-burger {
-  min-height: 10vh;
+.navbar-brand, .navbar-menu {
+  min-height: 5vh;
+  margin: auto;
+}
+.navbar-burger {
+  min-height: 5vh;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .modal .animation-content {
   z-index: 999;
+}
+@media screen and (max-width: 1024px) {
+  .navbar-brand {
+    min-height: 10vh;
+    margin: unset;
+  }
 }
 </style>
