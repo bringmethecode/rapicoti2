@@ -11,11 +11,11 @@
 
 @media screen and (max-width: 900px) {
   .slide {
-    .slidePhone {
+    .slidePhone-1 {
       bottom: 20%;
       max-height: 400px;
     }
-    .slideText {
+    .slideText-1 {
       left: 10%;
       font-size: 2em;
     }
@@ -24,16 +24,24 @@
 
 @media screen and (max-width: 500px) {
   .slide {
-    .slidePhone {
+    .slidePhone-1 {
       max-height: 500px;
       bottom: 3%;
       left: 0;
       right: 0;
       margin: auto;
     }
-    .slideText {
+    .slideText-1 {
       left: 10%;
       font-size: 2em;
+    }
+    .slidePhone-2 {
+      min-height: 600px;
+      bottom: -22%;
+    }
+    .slideText-2 {
+      top: 10%;
+      font-size: 1.7em;
     }
   }
 }

@@ -4,6 +4,7 @@
       :autoplay="false"
       :autoplaySpeed="5000"
       :pauseOnHover="false">
+
       <div class="slide slide--1">
         <h1 v-if="isDesktop" class="slideText slideText-1">Cotizaciones:
           <br /><span>A un solo click,</span>
@@ -15,17 +16,22 @@
           <br />
           <span>A un solo click, rápidas, efectivas.</span>
         </h1>
-        <img class="slidePhone slidePhone-1" :src="slide1phone" />
+        <img class="slidePhone slidePhone-1" :src="slide1img" />
       </div>
+
       <div class="slide slide--2">
-        <h1 class="slideText slideText-2">Cotizaciones:
-          <br /><span>A un solo click</span>
-          <br /><span>Rapidas</span>
-          <br /><span>Efectivas.</span>
+        <h1 v-if="isDesktop" class="slideText slideText-2">Cientos de proveedores:
+          <br /><span>cientos de cotizaciones,</span>
+          <br /><span>cientos de respuestas.</span>
         </h1>
-        <img class="slidePhone slidePhone-2" :src="slide2phone" />
+        <h1 class="slideTextMobile" v-else>
+          Cientos de proveedores:
+          <br />
+          <span>Cientos de cotizaciones, cientos de respuestas.</span>
+        </h1>
+        <img class="slidePhone slidePhone-2" :src="slide2img" />
       </div>
-      <div class="slide slide--3"></div>
+
   </agile>
 </template>
 
@@ -35,8 +41,8 @@ export default {
   data () {
     return {
       isDesktop: null,
-      slide1phone: require('../../assets/slides/pixelmockup.png'),
-      slide2phone: require('../../assets/slides/pixelmockup2.png')
+      slide1img: require('../../assets/slides/slide1phone.png'),
+      slide2img: require('../../assets/slides/slide2phone.png')
     }
   },
   created () {

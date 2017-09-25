@@ -48,8 +48,11 @@
       bottom: 5%;
     }
     &-2 {
-      left: 20%;
-      bottom: 5%;
+      left: 0;
+      bottom: -30%;
+      right: 0;
+      margin: auto;
+      min-height: 700px;
     }
   }
   .slideTextMobile {
@@ -68,7 +71,7 @@
       font-size: 0.5em;
     }
   }
-  .slideText {
+  &Text {
     position: absolute;
     font-size: 2.5em;
     font-weight: 500;
@@ -79,22 +82,19 @@
       left: 20%;
     }
     &-2 {
-      bottom: 40%;
-      right: 20%;
+      color: #fff;
+      font-size: 2.2em;
+      line-height: 1em;
+      top: 10%;
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+      span {
+        font-weight: 200;
+        font-size: 0.9em;
+      }
     }
-    span {
-      font-weight: 200;
-      font-size: 0.9em;
-    }
-  }
-  .slideText2 {
-    position: absolute;
-    bottom: 40%;
-    right: 20%;
-    font-size: 2.5em;
-    font-weight: 500;
-    line-height: 1.3em;
-    text-transform: uppercase;
     span {
       font-weight: 200;
       font-size: 0.9em;
@@ -102,5 +102,8 @@
   }
   &--1 {
     background: linear-gradient(to bottom right, #EF9A9A, #FFE082);
+  }
+  &--2 {
+    background: linear-gradient(to bottom right, #00b09b, #96c93d);
   }
 }
