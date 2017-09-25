@@ -1,7 +1,7 @@
 <template>
-  <agile :arrows="false" :speed="500"
+  <agile :arrows="false" :speed="800"
       :timing="'ease-in-out'"
-      :autoplay="false"
+      :autoplay="true"
       :autoplaySpeed="5000"
       :pauseOnHover="false">
 
